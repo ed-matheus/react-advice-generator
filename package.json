@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "eslint-disable-next-line": "off",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
