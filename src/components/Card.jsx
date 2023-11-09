@@ -3,9 +3,7 @@
 const Card = () => {
     return (
         <div>
-            <div className="container__card">
-                
-            </div>
+            oi
         </div>
     )
 }
