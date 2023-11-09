@@ -1,22 +1,31 @@
 import './Card.css'
+import {useState, useEffect} from 'react'
 
 const Card = () => {
+    const [advice, setAdvice] = useState('')
+    const [adviceId, setAdviceId] = useState('')
+
     const getRandomAdvice = () => {
-        // console.log('opa')
         fetch('https://api.adviceslip.com/advice')
-        .then(response => response.json)
-        .then(data => {
-            console.log(data)
-        })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data.slip.advice)
+
+                setAdvice(data.slip.advice)
+                setAdviceId(data.slip.id)
+            })
     }  
+
+    useEffect(() => {
+        getRandomAdvice()
+    }, []) // first call
 
     return (
         <div>
             <div className="container__card">
-                <h5>ADVICE <span id='adviceNumber'>#117</span></h5>
+                <h5>ADVICE <span id='adviceNumber'>{adviceId}</span></h5>
                 <span id='randomAdvice'>
-                    "It is easy to sit up and take notice, what's
-                    difficult is getting up and taking action"
+                    {advice}
                 </span>
 
                 <img src="/images/pattern-divider-mobile.svg" alt="" />
