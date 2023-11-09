@@ -1,0 +1,53 @@
+.container__card {
+    position: relative;
+    font-family: 'Manrope', sans-serif;
+    background-color: hsl(217, 19%, 24%);
+    width: 280px;
+    padding: 20px 30px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container__card > h5 {
+    font-weight: 500;
+    font-size: 0.4rem;
+    letter-spacing: 0.2rem;
+    color: hsl(150, 100%, 66%);
+}
+
+.container__card > img {
+    margin-bottom: 45px;
+    width: 100%;
+}
+
+#randomAdvice {
+    font-weight: 800;
+    font-size: 0.8rem;
+    text-align: center;
+    color: hsl(193, 38%, 86%);
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.adviceGenerateButton {
+    background-color: hsl(150, 100%, 66%);
+    border: none;
+    border-radius: 100%;
+    width: 65px;
+    height: 65px;
+    margin-top: 30px;
+
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+    margin-right: 137px;
+}
+
+.adviceGenerateButton:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 25px 2px hsl(150, 100%, 66%);
+}
