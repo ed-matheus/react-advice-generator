@@ -51,3 +51,30 @@
     cursor: pointer;
     box-shadow: 0px 0px 25px 2px hsl(150, 100%, 66%);
 }
+
+/* Media Queries */
+@media (min-width: 540px) {
+	.container__card {
+		width: 330px;
+	}
+
+    .adviceGenerateButton {
+        position: absolute;
+        right: 0;
+        bottom: -30px;
+        margin-right: 162px;
+    }
+}
+
+@media (min-width: 1000px) {
+	.container__card {
+		width: 360px;
+	}
+
+    .adviceGenerateButton {
+        position: absolute;
+        right: 0;
+        bottom: -30px;
+        margin-right: 176px;
+    }
+}
