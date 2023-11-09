@@ -11,8 +11,8 @@ const Card = () => {
             .then(data => {
                 console.log(data.slip.advice)
 
-                setAdvice(data.slip.advice)
-                setAdviceId(data.slip.id)
+                setAdvice(`"${data.slip.advice}"`)
+                setAdviceId(`#${data.slip.id}`)
             })
     }  
 
